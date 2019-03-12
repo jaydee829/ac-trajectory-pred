@@ -1,0 +1,18 @@
+version: '3.2'
+services:
+   deep-learning-with-python3_service:
+      build:
+         context: .
+         dockerfile: dockerfile
+         args:
+             USE_PYTHON_3_NOT_2: 1
+      ports:
+         - 8887:8888
+      user: 1000:1000
+      environment:
+          DISPLAY:
+      volumes: 
+         - "/home/justin/01 Practical Machine Learning/deep-learning-with-python-notebooks-master:/notebooks"
+         - "/home/justin/.keras:/.keras"
+         - "/tmp/.X11-unix:/tmp/.X11-unix:rw"
+         - "/home/justin/01 Practical Machine Learning/Final_Project/Data:/Data"

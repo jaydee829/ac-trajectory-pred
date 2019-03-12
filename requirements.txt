@@ -1,0 +1,9 @@
+numpy
+Pillow
+keras
+matplotlib
+scikit-learn
+h5py
+pandas
+pyyaml >= 5.1b3
+pydot

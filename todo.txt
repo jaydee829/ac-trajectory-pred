@@ -1,0 +1,15 @@
+- Fix normalization - DONE
+	- moving average
+	- determine from training data
+	- batch normalization?
+	- normalize per batch
+- 1D Conv + RNN with residual connections
+- Extra dense layers before final out
+- LR on plateau callback - DONE
+- other callbacks (csvlogger? modelcheckpoint?) - Done
+- mse over mae for loss - DONE
+- remove points prior to takeoff
+- build generator for validation data
+	- discover how to run validation data on a model by itself
+- build graph code to overlay a flight with the predictions like for 696
+- look at downsampling data to remove repeated points
